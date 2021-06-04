@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-03T20:27:14Z" name="Default suite" finished-at="2021-06-03T20:27:36Z" duration-ms="22162">
+    <groups>
+    </groups>
+    <test started-at="2021-06-03T20:27:14Z" name="Default test" finished-at="2021-06-03T20:27:36Z" duration-ms="22162">
+      <class name="test.TestAboutUs">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:test.TestAboutUs@22fcf7ab]" started-at="2021-06-03T20:27:14Z" name="createDriver" finished-at="2021-06-03T20:27:17Z" duration-ms="3327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="testAboutUs()[pri:0, instance:test.TestAboutUs@22fcf7ab]" started-at="2021-06-03T20:27:17Z" name="testAboutUs" finished-at="2021-06-03T20:27:36Z" duration-ms="18803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAboutUs -->
+      </class> <!-- test.TestAboutUs -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
