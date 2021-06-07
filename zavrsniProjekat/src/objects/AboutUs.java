@@ -24,10 +24,10 @@ public class AboutUs {
 		try {
 			driver.manage().window().maximize();
 			driver.findElement(By.xpath(COOKIES_XPATH)).click();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 			driver.findElement(By.xpath(ANNOUNCEMENT_CLOSE_XPATH)).click();
 			driver.findElement(By.xpath(CHAT_XPATH));
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 			driver.findElement(By.xpath(ABOUT_US_CHOOSE_XPATH)).click();
 			driver.findElement(By.xpath(CHAT_CLOSE_XPATH));
 

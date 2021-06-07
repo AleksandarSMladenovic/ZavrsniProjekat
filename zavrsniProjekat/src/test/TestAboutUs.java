@@ -5,14 +5,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import objects.AboutUs;
+import objects.WebDriverCreator;
 
 public class TestAboutUs {
 
 	private static WebDriver driver;
 	
 	@BeforeClass	
-	public void createDriver() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	public void crtDriver() {
+		WebDriverCreator.createDriver(driver);
 		driver = new ChromeDriver();
 	}
 	
@@ -21,8 +22,6 @@ public class TestAboutUs {
 		driver.navigate().to(AboutUs.URL);
 		AboutUs.closePopUp(driver);
 		AboutUs.openAboutUs(driver);
-		AboutUs.scrShoot(driver);	
-
-		
-	}	
+		AboutUs.scrShoot(driver);
+	}
 }
