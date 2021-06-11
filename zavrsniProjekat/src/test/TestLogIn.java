@@ -2,7 +2,6 @@ package test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,12 +32,14 @@ private static WebDriver driver;
 		driver.findElement(By.xpath(Home.LOGIN_BTN_XPATH)).click();
 		LoginPage.logIn(driver);
 		driver.manage().window().maximize();
-		WebElement wait = sacekaj.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LoginPage.LOGIN_TUT_WAIT_XPATH)));
+		sacekaj.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LoginPage.LOGIN_TUT_WAIT_XPATH)));
 		
 		String actualRs = driver.getCurrentUrl().toString();
-		//driver.quit();
 		String expectedRs = "https://firmica.humanity.com/app/dashboard/";
 		
 		Assert.assertEquals(actualRs, expectedRs);
+		
+		driver.quit();
+
 	}
 }

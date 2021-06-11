@@ -14,7 +14,7 @@ public class MyPageHumanity {
 	public static final String TRAINING_URL = "https://firmica.humanity.com/app/training/";
 	public static final String TRAINING_BTN_XPATH = "//*[@id=\"sn_training\"]/span/p";
 	public static final String STAFF_URL = "https://firmica.humanity.com/app/staff/list/load/true/";
-	public static final String STAFF_BTN_XPATH = "//*[@id=\"sn_staff\"]/span/p";
+	public static final String STAFF_BTN_XPATH = "//*[@id=\"sn_staff\"]/span";
 	public static final String ADD_STAFF_CLOSE_XPATH = "//*[@id=\"walkme-balloon-289370\"]/div/div[1]/div[2]/div/div[1]";
 	public static final String AVAILABILITY_XPATH = "//*[@id=\"sn_availability\"]/span";
 	public static final String AVAILABILITY_URL = "https://firmica.humanity.com/fe/availability/#/requests/week/2021-06-06/1";

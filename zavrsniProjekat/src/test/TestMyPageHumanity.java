@@ -2,7 +2,6 @@ package test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -54,25 +53,20 @@ public class TestMyPageHumanity {
 		driver.findElement(By.xpath(MyPageHumanity.LEAVE_BTN_XPATH)).click();
 		sa.assertEquals(driver.getCurrentUrl().toString(), MyPageHumanity.LEAVE_URL);
 
-		// Training button test
-		driver.findElement(By.xpath(MyPageHumanity.TRAINING_BTN_XPATH)).click();
-		sa.assertEquals(driver.getCurrentUrl().toString(), MyPageHumanity.TRAINING_URL);
-
 		// Staff button test
 		driver.findElement(By.xpath(MyPageHumanity.STAFF_BTN_XPATH)).click();
-		sacekaj.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(MyPageHumanity.STAFF_WAIT)));
-		// driver.findElement(By.xpath(MyPageHumanity.ADD_STAFF_CLOSE_XPATH)).click();
+		driver.findElement(By.xpath(MyPageHumanity.ADD_STAFF_CLOSE_XPATH)).click();
 		sa.assertEquals(driver.getCurrentUrl().toString(), MyPageHumanity.STAFF_URL);
 
 		// Availability button test
 		driver.findElement(By.xpath(MyPageHumanity.AVAILABILITY_XPATH)).click();
-		sacekajDuze.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(MyPageHumanity.PAYROL_BTN_XPATH)));
+		sacekajDuze.until(ExpectedConditions.visibilityOfElementLocated(By.id("act_primary")));
 		sa.assertEquals(driver.getCurrentUrl().toString(), MyPageHumanity.AVAILABILITY_URL);
 
 		// Payroll button test
 		driver.findElement(By.xpath(MyPageHumanity.PAYROL_BTN_XPATH)).click();
 		sa.assertEquals(driver.getCurrentUrl().toString(), MyPageHumanity.PAYROLL_URL);
-		// Payroll button test
+		// Reports button test
 		driver.findElement(By.xpath(MyPageHumanity.REPORTS_BTN_XPATH)).click();
 		sa.assertEquals(driver.getCurrentUrl().toString(), MyPageHumanity.REPORTS_URL);
 

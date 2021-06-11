@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Home {
-
+	
 	public static final String LOGIN_BTN_XPATH = "//*[@id=\"navbarSupportedContent\"]/div/a[2]/p";
 	
 	public static final String HOME = "https://www.humanity.com/";
