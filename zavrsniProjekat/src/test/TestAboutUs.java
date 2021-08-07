@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import objects.AboutUs;
+import objects.LoginPage;
 import objects.WebDriverCreator;
 
 public class TestAboutUs {
@@ -22,7 +23,7 @@ public class TestAboutUs {
 		driver = new ChromeDriver();
 	}
 	
-	@Test			
+	@Test (priority = 1)
 	public void testAboutUs() {
 		driver.navigate().to(AboutUs.URL);
 		AboutUs.closePopUp(driver);
@@ -31,6 +32,16 @@ public class TestAboutUs {
 		File tempFile = new File(AboutUs.PATH_FILES + "aboutUs.jpg");
 		Assert.assertTrue(tempFile.exists());
 	}
+	
+	@Test (priority = 2)
+	public void testLogIn(){
+		LoginPage.logInMethod(driver);
+		String actualRs = driver.getCurrentUrl().toString();
+		String expectedRs = LoginPage.EXPECTED_URL;
+		
+		Assert.assertEquals(actualRs, expectedRs);		
+	}
+		
 	
 	@AfterClass
 	public void closeAll() {
