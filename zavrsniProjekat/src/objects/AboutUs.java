@@ -18,6 +18,7 @@ public class AboutUs {
 	public static final String COOKIES_XPATH = "//*[@id=\"cf-root\"]/div/div/div/div[2]/div[2]/div[1]/button/span";
 	public static final String CHAT_XPATH = "//*[@id=\"intercom-container\"]/div/div/div[2]/div/div/div[1]/div/div[1]/div/div[1]/div/div[2]/div[1]";
 	public static final String CHAT_CLOSE_XPATH = "//*[@id=\"intercom-container\"]/div/iframe";
+	public static final String PATH_FILES = System.getProperty("user.dir") + "\\src\\screenshot\\";
 	
 	public static void closePopUp(WebDriver driver) {
 		
@@ -41,13 +42,12 @@ public class AboutUs {
 		driver.findElement(By.xpath(ABOUT_US_CHOOSE_XPATH)).click();
 	}
 	
-	public static void scrShoot(WebDriver driver) {
+	public static void scrShoot(WebDriver driver, String filename) {
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File screenshot = new File("C:\\Users\\LENOVO\\eclipse-workspace\\zavrsni_projekat\\zavrsniProjekat\\src\\slika.png");
+		File screenshot = new File(filename);
 			try {
 				FileHandler.copy(scrFile, screenshot);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	}
