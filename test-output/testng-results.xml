@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-07T20:43:19Z" name="Default suite" finished-at="2021-08-07T20:43:38Z" duration-ms="19208">
+  <suite started-at="2021-08-17T19:11:50Z" name="Default suite" finished-at="2021-08-17T19:12:10Z" duration-ms="19954">
     <groups>
     </groups>
-    <test started-at="2021-08-07T20:43:19Z" name="Default test" finished-at="2021-08-07T20:43:38Z" duration-ms="19208">
+    <test started-at="2021-08-17T19:11:50Z" name="Default test" finished-at="2021-08-17T19:12:10Z" duration-ms="19954">
       <class name="test.TestAboutUs">
-        <test-method is-config="true" signature="crtDriver()[pri:0, instance:test.TestAboutUs@657c8ad9]" started-at="2021-08-07T22:43:19Z" name="crtDriver" finished-at="2021-08-07T22:43:20Z" duration-ms="1462" status="PASS">
+        <test-method is-config="true" signature="crtDriver()[pri:0, instance:test.TestAboutUs@3b2cf7ab]" started-at="2021-08-17T21:11:50Z" name="crtDriver" finished-at="2021-08-17T21:11:52Z" duration-ms="1572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crtDriver -->
-        <test-method signature="testAboutUs()[pri:1, instance:test.TestAboutUs@657c8ad9]" started-at="2021-08-07T22:43:20Z" name="testAboutUs" finished-at="2021-08-07T22:43:27Z" duration-ms="7267" status="PASS">
+        <test-method signature="testAboutUs()[pri:1, instance:test.TestAboutUs@3b2cf7ab]" started-at="2021-08-17T21:11:52Z" name="testAboutUs" finished-at="2021-08-17T21:12:00Z" duration-ms="7522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAboutUs -->
-        <test-method signature="testLogIn()[pri:2, instance:test.TestAboutUs@657c8ad9]" started-at="2021-08-07T22:43:27Z" name="testLogIn" finished-at="2021-08-07T22:43:37Z" duration-ms="9753" status="PASS">
+        <test-method signature="testLogIn()[pri:2, instance:test.TestAboutUs@3b2cf7ab]" started-at="2021-08-17T21:12:00Z" name="testLogIn" finished-at="2021-08-17T21:12:10Z" duration-ms="10123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogIn -->
-        <test-method is-config="true" signature="closeAll()[pri:0, instance:test.TestAboutUs@657c8ad9]" started-at="2021-08-07T22:43:37Z" name="closeAll" finished-at="2021-08-07T22:43:38Z" duration-ms="710" status="PASS">
+        <test-method is-config="true" signature="closeAll()[pri:0, instance:test.TestAboutUs@3b2cf7ab]" started-at="2021-08-17T21:12:10Z" name="closeAll" finished-at="2021-08-17T21:12:10Z" duration-ms="724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAll -->
